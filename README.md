@@ -17,12 +17,12 @@ Buscando maior praticidade, o arquivo executável disponibilizado abaixo permite
 
 ### Executável 
 
-1. Vá até a aba **[Releases](https://github.com/guirv/PDF-to-JPEG-Converter-CLI-/releases/latest)** deste repositório.
+1. Vá até a aba **[Releases](https://github.com/guirv/PDF-to-JPEG-Converter-CLI/releases)** deste repositório.
 2. Baixe o arquivo `pdf-to-image.exe`.
 3. Coloque-o na MESMA PASTA onde estão os arquivos PDF que você deseja converter.
 4. Dê um duplo clique no `.exe` e siga as instruções na tela!
 
-### Exemplo Interface-Resultado
+### 💻 Exemplo Interface-Resultado
 
 ![Exemplo Interface-Resultado](assets/pdf-to-image-print.jpg)
 
