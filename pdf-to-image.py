@@ -11,15 +11,6 @@ def listar_pdfs():
     arquivos = os.listdir('.')
     pdfs = [arq for arq in arquivos if arq.lower().endswith('.pdf')]
     return pdfs
-
-def obter_caminho_poppler():
-    ''' Verifica se o poppler está como .py ou como .exe '''
-    if getattr(sys, 'frozen', False):
-        # Se estiver rodando como .exe, pega o caminho da pasta temporária
-        return os.path.join(sys._MEIPASS, 'poppler')
-    else:
-        # Se estiver rodando como .py, usa a Variável de Ambiente
-        return None
     
 def main():
     while True:
@@ -123,7 +114,6 @@ def main():
                 dpi=300, 
                 first_page=pagina_inicial, 
                 last_page=pagina_final,
-                poppler_path=obter_caminho_poppler()
             )
             
             # Salvar as imagens
