@@ -13,14 +13,28 @@ Desenvolvido em Python, foi idealizado por uma necessidade pessoal, permitindo, 
 
 ## 🚀 Como Usar
 
-Buscando maior praticidade, o arquivo executável disponibilizado abaixo permite o uso da ferramenta sem configurar um ambiente de desenvolvimento.
+Para utilizar esta ferramenta, você precisará do executável e do motor de renderização de PDFs chamado **Poppler**. Siga o passo a passo abaixo:
 
-### Executável 
+### 1. Baixando os Arquivos
+1. Vá até a aba **[Releases](https://github.com/guirv/PDF-to-JPEG-Converter-CLI/releases/latest)** deste repositório.
+2. Baixe os dois arquivos disponíveis:
+   - `pdf-to-image.exe` (O programa)
+   - `poppler.zip` (O motor de renderização)
 
-1. Vá até a aba **[Releases](https://github.com/guirv/PDF-to-JPEG-Converter-CLI/releases)** deste repositório.
-2. Baixe o arquivo `pdf-to-image.exe`.
-3. Coloque-o na MESMA PASTA onde estão os arquivos PDF que você deseja converter.
-4. Dê um duplo clique no `.exe` e siga as instruções na tela!
+### 2. Configurando o Poppler (Apenas na primeira vez)
+O Windows precisa saber onde o Poppler está para que a conversão funcione.
+
+1. Extraia o arquivo `poppler.zip` em um local fixo no seu computador (Recomendação: `C:\poppler`).
+2. Abra o menu Iniciar do Windows e digite **"Editar as variáveis de ambiente do sistema"** e aperte Enter.
+3. Clique no botão **"Variáveis de Ambiente..."**.
+4. Na lista inferior (**Variáveis do sistema**), procure a variável **`Path`**, selecione-a e clique em **Editar**.
+5. Clique em **Novo** e cole o caminho completo da pasta `bin` que está dentro do Poppler extraído.
+   - *Exemplo: `C:\poppler\Library\bin` (verifique onde a pasta bin está no seu arquivo extraído).*
+6. Clique em **OK** em todas as janelas para salvar.
+
+### 3. Usando o Conversor
+1. Coloque o arquivo `pdf-to-image.exe` na **MESMA PASTA** onde estão os arquivos PDF que você deseja converter.
+2. Dê um duplo clique no `.exe` e siga as instruções na tela do terminal!
 
 ### 💻 Exemplo Interface-Resultado
 
